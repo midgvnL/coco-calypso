@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nerko+One&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background: rgb(255, 164, 137);
+}
+
+.topo {
+    background-color: #fec8c9;
+    box-shadow: 2px rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px 12px 0px 0px;
+    margin: 20px 60px -20px 60px;
+}
+
+.corpo {
+    background-color: rgb(200, 255, 173);
+    height: 460px;
+    margin: 0px 60px -60px 60px;
+    padding: 5px;
+
+}
+
+.login {
+    margin-top: ;
+    margin-left: ;
+}
+
+/*************************MENU***********************/
+
+
+input[type=checkbox]
+{
+    display: none;
+}
+
+
+.mobile-menu {
+    background-color: #9bff3e;
+    width: 300px;
+    left: -350px;
+    height: 500px;
+    position: absolute;
+    transition: transform 0.3s ease;
+    transform: translateX(-418px);
+    
+}
+
+input[type="checkbox"]:checked ~ .mobile-menu {
+    transform: translateX(418px);
+}
+
+input[type="checkbox"]:checked ~ label .imagem {
+    display: none;
+}
+
+.fechar {
+    margin-left: -350px
+}
+
+input[type="checkbox"]:checked ~ label .fechar {
+    margin-left: -10px;
+
+}
+label .imagem {
+    margin-left: -10px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 15px 0;
+
+}
+
+ul{
+    
+    margin-top: 80px;
+}
+
+a {
+    display: block;
+    padding: 8px 5px;
+    color: coral;
+    font-family: "Nerko One", cursive;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: rgb(50, 252, 184);
+}
+
+.nav-item a {
+    transition: .2s;
+}
+
+label{
+    
+    padding: 15px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/************************prod**********************/
+
+
+.produtoss {
+    text-align: center;
+    height: 140px;
+    color: rgb(113, 234, 0);
+    font-size: 25px;
+    background-color: #feeec8;
+    margin: 60px 60px -40px 60px;
+}
+
+.produtoss h1 {
+    box-shadow: 8px black;
+}
+
+/*menu prod*/
+
+.minu {
+    list-style: none;
+    background-color: #feeec8;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.minu li {
+    display: inline;
+    
+} 
+
+.minu li a {
+    color: coral;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    display: inline;
+    font-size: 1.3rem;
+    color: coral;
+    margin-left: 150px;
+    position: relative;
+
+}
+
+.minu a:hover {
+    color: #07ce64;
+    border-bottom: 2.3px solid #07ce64;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+.corpo2 {
+    background-color: rgb(200, 255, 173);
+    height: ;
+    margin: 20px 60px 60px 60px;
+    padding: 5px;
+    border-radius: 0px 0px 12px 12px;
+
+}
+
+.alto {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    padding-right: 6px;
+    align-items: center;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 1111px;
+    font-size: 15px;
+    font-family: "Zilla Slab", serif;
+    color: rgb(211, 27, 88);
+    cursor: pointer;
+}
+
+.banner {
+
+    margin-top: 22px;
+    margin-left: 200px;
+    display: inline-block;
+    margin-right: 0px;
+
+}
+
+.banner2 img {
+    border: 5px solid rgb(153, 224, 255);
+
+
+}
+
+
+
+h1 {
+    font-family: "Nerko One", cursive;
+
+}
+
+h2 {
+    font-family: "Zilla Slab", serif;
+
+}
+
+h3 {
+    font-family: "Amatic SC", sans-serif;
+
+}
+
+
+/*******************************PRODUTOS***********************************/
+
+
+
+
+.contaner-produ {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0px 50px 50px 50px;
+}
+
+.card-produ {
+    background-color: rgb(174, 246, 254);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-top: 20px;
+}
+
+.contaner-img {
+    position: relative;
+
+}
+
+.contaner-img img {
+    width: 100%;
+}
+
+
+
+.card-prod .name {
+    position: absolute;
+    left: 0;
+    color: rgb(255, 255, 255);
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    display: inline-block;
+
+
+}
+
+.price {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+}
+
+
+
+.price2 {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 4rem;
+
+}
+
+.price2a {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 2rem;
+
+}
+
+.price2b {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 3rem;
+
+}
+
+
+.price3 {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 3.8rem;
+}
+
+.price3a {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 3.5rem;
+}
+
+.price3b {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 2.9rem;
+}
+
+.price4 {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 2.7rem;
+}
+
+.price4a {
+    text-align: right;
+    font-size: 27px;
+    margin-top: 2px;
+    color: rgb(1, 61, 8);
+    margin-left: 3.3rem;
+}
+
+
+
+
+.outbanner {
+    display: flex;
+}
+
+.name {
+    font-family: "Zilla Slab", serif;
+    font-size: 1.1rem;
+    color: rgb(174, 246, 254)
+}
+
+
+.card-produ:hover .name {
+
+    color: #9308d3;
+}
+
+.butaog {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: absolute;
+    /*a oosição absoluta para posicionamento especifico*/
+    top: 5px;
+    /*alinhamento ao topo*/
+    right: 9px;
+    /*alinhamento a direita*/
+    z-index: -1rem;
+    /*define a sobreposição inicial*/
+    transition: all 0.4s ease;
+    /*animação de transição suave*/
+
+}
+
+.butaog img {
+    border: 2px solid #6cf609;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 10%;
+    background-color: #f6f3ff53;
+    
+
+
+}
+
+.butaog img:hover {
+    background-color: #e7eee0;
+}
+
+
+.butaog img {
+    font-size: 1.5rem;
+    color: #e7eee0;
+
+}
+
+.butaog span:hover i {
+    color: #fff;
+}
+
+
+/****************************************area suporte contato***********************************/
+
+.grade {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.suporte {
+
+    background-color: #c34e94;
+    height: 300px;
+    width: 600px;
+    margin: 0px 0px 0px 60px;
+    border-radius: 3%;
+    margin-top: -5rem;
+}
+
+.suporte h1 {
+    font-size: 50px;
+    color: rgb(176, 240, 251);
+    font-family: "Nerko One", cursive;
+    
+}
+
+.contato h1 {
+    font-size: 50px;
+    color: rgb(254, 28, 114);
+    font-family: "Nerko One", cursive;
+    margin-top: -2px;
+}
+
+
+
+.contato {
+    background-color: #F8E157;
+    height: 300px;
+    width: 600px;
+    margin:-37px 0px 0px 75px;
+    border-radius: 3%;
+    
+}
+
+.sticker img {
+    position: absolute;
+    margin-left: -360px;
+    margin-top: 30px;
+    box-shadow: 0px 8px 0px 8px solid black;
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15rem);
+}
+
+.sticker2 img {
+    position: absolute;
+    height: 30%;
+    margin-left: 175px;
+    margin-top: 70px;
+    box-shadow: 0px 8px 0px 8px solid black;
+   
+}
+
+.suporte img {
+    height: 10%;
+    margin-top: 2px;
+    margin-left: -246px;
+}
+
+.duv {
+    font-size: 1.3rem;
+    color: aliceblue;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Zilla Slab", serif;
+    margin-top: 10px;
+    margin-left: 130px;
+    justify-content: center;
+
+}
+
+.per {
+    font-size: .8rem;
+    color: rgb(217, 234, 249);
+    cursor: pointer;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.ctt {
+    font-size: 1.3rem;
+    color: rgb(14, 40, 62);
+    cursor: pointer;
+    text-align: center;
+    font-family: "Zilla Slab", serif;
+    margin-top: 10px;
+    margin-left: 130px;
+    justify-content: center;
+}
+
+.contato img {
+    
+        height: 10%;
+        margin-top: 2px;
+        margin-left: -246px;
+}
+
+
+.fack {
+   display: flex;
+}
